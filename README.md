@@ -20,10 +20,32 @@ This repository contains the neural network architecture, data parsing logic, an
     *   `python data_loader.py`
     *   `python model.py`
 
-1. data loader
-2. feature_engineering
-3. train.py
-4. predict.py 
+## Project Structure
+├── data_loader.py        # Loads and structures raw datasets
+├── feature_engineering/  # Data preprocessing & feature creation
+├── model.py              # Neural network architecture
+├── train.py              # Model training pipeline
+├── predict.py            # Matchup prediction script
+├── data/                 # Place datasets here
+└── README.md
 
-Copy/Paste (Changing Team Names Accordingly)
-& ".\venv\Scripts\python.exe" "models/src/predict.py" "Purdue" "North Carolina"
+## Data Pipeline
+Data Collection: 
+Uses KenPom and Torvik datasets containing team efficiency, rankings, and performance metrics. 
+
+Data Loading: 
+- `data_loader.py` reads CSV files into structured pandas DataFrames.
+
+Feature Engineering (in progress / customizable):  
+- Merge datasets by team and season.
+- Normalize and encode features.
+- Construct model-ready input tensors 
+
+Model Inference:
+- Feed-forward neural network (PyTorch)
+- Linear layers + ReLU activations
+- Dropout for regularization
+- Sigmoid output for win probability (0–1)
+
+## Make a prediction
+`python predict.py "Team A" "Team B"`
