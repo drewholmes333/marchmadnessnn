@@ -1,4 +1,4 @@
-# March Madness Prediction Neural Network
+# March Madness Prediction Neural Network (Matchup Volatility Model v2)
 
 This repository contains the neural network architecture, data parsing logic, and execution steps for predicting March Madness outcomes using KenPom and Torvik datasets.
 
