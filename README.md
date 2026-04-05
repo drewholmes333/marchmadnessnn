@@ -1,10 +1,3 @@
-MVM-2: Matchup Volatility Modeling Engine
-This repository contains the architecture, data parsing logic, and execution steps for predicting March Madness outcomes. MVM-2 utilizes a Triple-Engine Ensemble (PyTorch Neural Network, XGBoost, and Random Forest) stacked with a Logistic Regression Meta-Learner to project tournament outcomes, run Monte Carlo simulations, and generate diversified bracket portfolios.
-
-System Architecture & Data Flow
-Multi-Source Data Ingestion: Base efficiency metrics are loaded from kenpom.csv and torvik.csv. Historical matchup data is sourced from EvanMiya.
-
-Live Tactical & Contextual Scouting: The pipeline actively scrapes Sports-Reference to build contextual profiles for teams. This includes:
 # MVM-2: Matchup Volatility Modeling Engine
 
 This repository contains the architecture, data parsing logic, and execution steps for predicting March Madness outcomes. **MVM-2** utilizes a Triple-Engine Ensemble (PyTorch Neural Network, XGBoost, and Random Forest) stacked with a Logistic Regression Meta-Learner to project tournament outcomes, run Monte Carlo simulations, and generate diversified bracket portfolios.
